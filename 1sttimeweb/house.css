@@ -46,10 +46,6 @@ flex-wrap: wrap;
     color: grey;
    
 }
-
-body{
-    margin: none;
-}
 .container-up{
     display: flex;
     flex-wrap: wrap;
@@ -64,7 +60,6 @@ gap:10px;
 }
 .container-up-down{
 background: orangered;
-width: 100%;
 }
 .child-1{
 flex:40%;
