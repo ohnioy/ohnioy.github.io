@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+<body>
+
+<h1>The JavaScript <i>this</i> Keyword</h1>
+
+<p>In this example, <b>this</b> refers to the <b>person object</b>.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const movie = {
+ name:"forzen",
+ year:1999
+};
+
+function info(author) {
+  return this.name + ' was reseasled in ' + this.year + ' by ' + author
+}
+document.write(info.apply(movie,['david']));
+const gameinfo = info.bind(movie,'david');
+gameinfo();
+// Display dainfo.call(movie)ta from the object:
+//document.getElementById("demo").innerHTML =v ;
+</script>
+
+</body>
+</html>
