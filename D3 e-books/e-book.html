@@ -4,7 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        
+        #e-span{
+	font-family:cursive;
+	font-size: 25px;
+	color:blue;
+}
+#div-1{
+	font-size:35px;
+	padding-right: 10px;
+	font-family: monospace;
+}
+.logo{
+    color:white;
+    line-height: 20px;
+    font-size: 35px;
+   padding: 10px;
+    font-weight: bold; 
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+}
+nav li{
+    display:inline;
+    margin-left:15px;
+    font-family: monospace;
+    color:white;
+    font-size: 15px;
+}
+nav ul{
+    float: right;
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 20px;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    padding: 0px 5px;
+}
+.sidebar{
+    width:250px;
+    height:100vh;
+    border-radius:2%;
+    position:absolute;
+    right:0;
+    background:rgba(255, 255, 255, 0.151);
+    backdrop-filter: blur(10px);
+    display: none;
+     justify-content: space-evenly;
+    flex-direction: column;
+    align-items:center;
+    z-index: 999;
+}
+
+body{
+    background-image: url("butterflies.jpg");
+    background-size: cover;
+    width:100vh;
+    height:100vh;
+}
+.res-1,.res-2,.res-3,.res-4,.res-5{
+    margin-bottom:3%;
+    font-family:cursive,sans-serif;
+}
+.show{
+    display:none;
+}
+@media(max-width:697px){
+    .li-1,.li-2,.li-3,.li-4,.li-5{
+        display:none;
+    }
+    .sidebar{
+        width:100%;
+    }
+    .show{
+        display:block;
+    }
+}
     </style>
     <body>
     	<header>
